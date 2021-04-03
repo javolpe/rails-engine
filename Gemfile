@@ -39,6 +39,7 @@ group :development, :test do
   gem 'shoulda-matchers', '~> 3.1'
   gem 'orderly'
   gem 'active_designer'
+  gem 'fast_jsonapi'
 end
 
 group :development do
