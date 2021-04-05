@@ -195,11 +195,32 @@
           null,
           null,
           1,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/spec/factories/items.rb": {
+        "lines": [
+          1,
+          1,
+          181,
+          181,
+          181,
           1,
           null,
-          null,
-          null,
-          null,
+          null
+        ]
+      },
+      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/spec/factories/merchants.rb": {
+        "lines": [
+          1,
+          1,
+          185,
           null,
           null
         ]
@@ -208,82 +229,16 @@
         "lines": [
           1,
           null,
-          null
-        ]
-      },
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/app/models/customer.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/app/models/application_record.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/spec/models/invoice_item_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/app/models/invoice_item.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/spec/models/invoice_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          2,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/app/models/invoice.rb": {
-        "lines": [
-          1,
           1,
           1,
           1,
           1,
           1,
           null,
-          null,
-          1,
-          null
-        ]
-      },
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/spec/models/item_spec.rb": {
-        "lines": [
           1,
           null,
           1,
-          1,
-          2,
-          2,
+          null,
           null,
           null
         ]
@@ -296,21 +251,14 @@
           1,
           1,
           null,
+          1,
           null
         ]
       },
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/spec/models/merchant_spec.rb": {
+      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/app/models/application_record.rb": {
         "lines": [
           1,
-          null,
           1,
-          1,
-          2,
-          2,
-          2,
-          2,
-          2,
-          null,
           null
         ]
       },
@@ -326,25 +274,68 @@
           null
         ]
       },
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/spec/models/transaction_spec.rb": {
+      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/app/controllers/api/v1/item_merchants_controller.rb": {
         "lines": [
-          1,
-          null,
           1,
           1,
           2,
+          1,
+          1,
           null,
           null
         ]
       },
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/app/models/transaction.rb": {
+      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/app/controllers/application_controller.rb": {
         "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/app/serializers/merchant_serializer.rb": {
+        "lines": [
+          1,
           1,
           1,
           null
         ]
       }
     },
-    "timestamp": 1617316160
+    "timestamp": 1617663661
   }
 }
