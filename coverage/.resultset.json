@@ -208,9 +208,9 @@
         "lines": [
           1,
           1,
-          181,
-          181,
-          181,
+          1,
+          7,
+          7,
           1,
           null,
           null
@@ -220,7 +220,7 @@
         "lines": [
           1,
           1,
-          185,
+          7,
           null,
           null
         ]
@@ -234,10 +234,11 @@
           1,
           1,
           1,
-          null,
+          1,
           1,
           null,
           1,
+          null,
           null,
           null,
           null
@@ -252,6 +253,13 @@
           1,
           null,
           1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          2,
+          null,
           null
         ]
       },
@@ -274,13 +282,18 @@
           null
         ]
       },
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/app/controllers/api/v1/item_merchants_controller.rb": {
+      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/app/controllers/api/v1/items/search_controller.rb": {
         "lines": [
           1,
           1,
           2,
+          2,
+          2,
+          2,
           1,
+          null,
           1,
+          null,
           null,
           null
         ]
@@ -298,7 +311,7 @@
           null,
           null,
           1,
-          1,
+          0,
           null,
           null,
           1,
@@ -327,15 +340,19 @@
           null
         ]
       },
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/app/serializers/merchant_serializer.rb": {
+      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/app/serializers/item_serializer.rb": {
         "lines": [
           1,
           1,
           1,
+          null,
+          1,
+          1,
+          null,
           null
         ]
       }
     },
-    "timestamp": 1617663661
+    "timestamp": 1617669689
   }
 }
