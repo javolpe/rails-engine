@@ -208,9 +208,9 @@
         "lines": [
           1,
           1,
-          181,
-          181,
-          181,
+          1,
+          1,
+          1,
           1,
           null,
           null
@@ -220,7 +220,7 @@
         "lines": [
           1,
           1,
-          185,
+          1,
           null,
           null
         ]
@@ -234,31 +234,14 @@
           1,
           1,
           1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/app/models/item.rb": {
-        "lines": [
-          1,
-          1,
-          1,
           1,
           1,
           null,
           1,
-          null
-        ]
-      },
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/app/models/application_record.rb": {
-        "lines": [
+          null,
           1,
-          1,
+          null,
+          null,
           null
         ]
       },
@@ -271,16 +254,28 @@
           1,
           1,
           1,
+          null,
+          1,
+          null,
+          2,
+          null,
+          null,
           null
         ]
       },
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/app/controllers/api/v1/item_merchants_controller.rb": {
+      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/app/controllers/api/v1/merchants/search_controller.rb": {
         "lines": [
           1,
           1,
           2,
-          1,
-          1,
+          2,
           null,
           null
         ]
@@ -298,7 +293,7 @@
           null,
           null,
           1,
-          1,
+          0,
           null,
           null,
           1,
@@ -336,6 +331,6 @@
         ]
       }
     },
-    "timestamp": 1617663661
+    "timestamp": 1617683397
   }
 }
