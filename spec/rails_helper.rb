@@ -2,6 +2,7 @@
 require 'spec_helper'
 require 'simplecov'
 SimpleCov.start
+SimpleCov.add_filter ['spec', 'config', '/app/mailers', 'app/jobs', 'app/channels']
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../config/environment', __dir__)
 # Prevent database truncation if the environment is production
@@ -65,7 +66,7 @@ RSpec.configure do |config|
   # config.filter_gems_from_backtrace("gem name")
   config.include FactoryBot::Syntax::Methods
   config.include RequestTestObjects, type: :request
-  # config.include ModelRailsHelper, type: :model
+  config.include RequestTestObjects, type: :model
 end
 
 
