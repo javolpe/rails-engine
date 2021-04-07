@@ -11,6 +11,9 @@ Rails.application.routes.draw do
       resources :items
 
       get 'items/:id/merchant', to: 'item_merchants#show'
+
+      get 'revenue/merchants/:id', to: 'merchants#single_revenue'
+      get 'revenue/unshipped', to: 'invoices#unshipped'
     end
   end
 end

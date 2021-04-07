@@ -9,6 +9,13 @@ class Merchant < ApplicationRecord
   def self.find_all_by_name_fragment(search_term)
     where('lower(name) LIKE ?', '%' + search_term + '%')
     .order(:name)
+  end
 
+  def revenue 
+    transactions
+    .where('invoices.status = ?', 'shipped')
+    .where('transactions.result = ?', 'success')
+    .pluck("(invoice_items.quantity * items.unit_price) AS revenue")
+    .sum.round(2)
   end
 end

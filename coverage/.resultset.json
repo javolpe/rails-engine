@@ -1,283 +1,6 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/config/environment.rb": {
-        "lines": [
-          null,
-          1,
-          null,
-          null,
-          1
-        ]
-      },
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/config/application.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/config/boot.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1
-        ]
-      },
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/config/environments/test.rb": {
-        "lines": [
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/config/initializers/application_controller_renderer.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/config/initializers/backtrace_silencers.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/config/initializers/cors.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/config/initializers/filter_parameter_logging.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          1
-        ]
-      },
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/config/initializers/inflections.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/config/initializers/mime_types.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/config/initializers/wrap_parameters.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/spec/factories/customer.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/spec/factories/invoice.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/spec/factories/invoice_item.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/spec/factories/items.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/spec/factories/merchants.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/config/routes.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
       "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/app/models/customer.rb": {
         "lines": [
           1,
@@ -296,6 +19,17 @@
           null
         ]
       },
+      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/app/models/invoice_item.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/app/models/invoice.rb": {
         "lines": [
           1,
@@ -305,20 +39,18 @@
           1,
           1,
           1,
+          1,
           null,
           null,
           1,
-          null
-        ]
-      },
-      "/Users/jvolpe/Desktop/Turing/3mod/projects/rails-engine/app/models/invoice_item.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          2,
+          null,
+          null,
           null
         ]
       },
@@ -337,6 +69,13 @@
           null,
           null,
           0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null,
           1,
@@ -370,6 +109,13 @@
           0,
           null,
           null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          0,
+          null,
           null
         ]
       },
@@ -381,6 +127,6 @@
         ]
       }
     },
-    "timestamp": 1617755986
+    "timestamp": 1617815069
   }
 }
