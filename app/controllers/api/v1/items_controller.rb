@@ -27,6 +27,9 @@ class Api::V1::ItemsController < ApplicationController
   end
 
   def destroy 
+    @item = Item.find(params[:id])
+    invoices = @item.invoices.joins(:invoice_items).having('count(invoices.*) = 1').group('invoices.id').pluck(:id)
+    Invoice.destroy(invoices)
     Item.find(params[:id]).destroy
   end
 
