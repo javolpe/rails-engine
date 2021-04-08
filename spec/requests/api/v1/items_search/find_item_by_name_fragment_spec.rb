@@ -1,6 +1,6 @@
 require 'rails_helper' 
 
-RSpec.describe "Api::V1::Merchants", type: :request do
+RSpec.describe "Api::V1::Items::Search", type: :request do
   describe "Finding one Item by searching" do 
     it "for a name fragment" do 
       item1 =  create(:item, name: "Super Fancy Item Name")
@@ -68,6 +68,34 @@ RSpec.describe "Api::V1::Merchants", type: :request do
       expect(json[:data][:id]).to eq(item2.id.to_s)
       expect(json[:data][:attributes][:name]).to eq(item2.name)
     end
+    it "fetches one item between min and max if both are valid" do 
+      item1 = create(:item, name: "B Item", unit_price: 100.99)
+      item2 = create(:item, name: "A Item", unit_price: 99.99)
+      item3 = create(:item, name: "C Item", unit_price: 300.99)
+      min_price = 1.0 ; max_price = 200.00
+      get "/api/v1/items/find?min_price=#{min_price}&max_price=#{max_price}"
+      json = JSON.parse(response.body, symbolize_names: true)
+      expect(response).to be_successful
+      expect(response.status).to eq(200)
+  
+      expect(json.count).to eq(1)
+      expect(json[:data][:id]).to_not eq(item1.id.to_s)
+      expect(json[:data][:id]).to eq(item2.id.to_s)
+      expect(json[:data][:attributes][:name]).to eq(item2.name)
+    end
+    it "fetches empty data if min and max are both valid but not items match" do 
+      item1 = create(:item, name: "B Item", unit_price: 100.99)
+      item2 = create(:item, name: "A Item", unit_price: 99.99)
+      item3 = create(:item, name: "C Item", unit_price: 300.99)
+      min_price = 1000.0 ; max_price = 2000.00
+      get "/api/v1/items/find?min_price=#{min_price}&max_price=#{max_price}"
+      json = JSON.parse(response.body, symbolize_names: true)
+      expect(response).to be_successful
+      expect(response.status).to eq(200)
+  
+      expect(json[:data].count).to eq(0)
+      expect(json[:data]).to eq({})
+    end
     it "returns 200 but no data if min price is too big" do
       item1 = create(:item, name: "B Item", unit_price: 100.99)
       item2 = create(:item, name: "A Item", unit_price: 99.99)
@@ -118,6 +146,11 @@ RSpec.describe "Api::V1::Merchants", type: :request do
     end
     it "returns 400 if max price is less than 0" do
       get "/api/v1/items/find?max_price=-1"
+      expect(response).to_not be_successful
+      expect(response.status).to eq(400)
+    end
+    it "returns a 400 error if no query param is sent" do 
+      get "/api/v1/items/find"
       expect(response).to_not be_successful
       expect(response.status).to eq(400)
     end

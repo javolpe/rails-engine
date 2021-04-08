@@ -26,7 +26,7 @@ class ApplicationController < ActionController::API
     elsif !params[:page] && params[:per_page]
       @serial = serializer.new(object_type.limit(per_page))
     elsif params[:page] && params[:per_page]
-      @serial = serializer.new(page_display(per_page, page))
+      @serial = serializer.new(object_type.limit(per_page).offset(per_page * (page - 1))) 
     else 
       @serial = serializer.new(object_type.limit(20))
     end
