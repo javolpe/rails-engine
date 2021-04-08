@@ -3,6 +3,6 @@ class MerchantRevenueSerializer
   
 
   attributes :revenue do |merchant|
-    merchant.revenue
+    merchant.revenue_for_one_merchant
   end
 end
