@@ -15,6 +15,7 @@ Rails.application.routes.draw do
       get 'revenue/merchants', to: 'merchants#revenue_sorted'
       get 'revenue/merchants/:id', to: 'merchants#single_revenue'
       get 'revenue/unshipped', to: 'invoices#unshipped'
+      get 'revenue/items', to: 'items#highest_revenue'
     end
   end
 end
