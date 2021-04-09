@@ -1,24 +1,4 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Rails Engine is a mock back end for an E-Commerce site that allows you to query for Merchants and Items sorted in different ways.
+Some endpoints are more straight forward such as "Finding all Merchants" while others have some Business Intelligence logic involved in the endpoint such as "Get Merhants with most Revenue".
