@@ -13,17 +13,25 @@ class Merchant < ApplicationRecord
 
   def revenue_for_one_merchant
     transactions
-    .where('invoices.status = ?', 'shipped')
-    .where('transactions.result = ?', 'success')
+    .where("invoices.status = 'shipped'")
+    .where("transactions.result = 'success'")
     .pluck("(invoice_items.quantity * items.unit_price) AS revenue")
     .sum.round(2)
   end
 
+  # def revenue_for_one_merchant
+  #   transactions
+  #   .where('invoices.status = ?', 'shipped')
+  #   .where('transactions.result = ?', 'success')
+  #   .pluck("(invoice_items.quantity * items.unit_price) AS revenue")
+  #   .sum.round(2)
+  # end
+
   def self.sorted_by_revenue(quantity)
     select('merchants.*, sum(invoice_items.quantity * invoice_items.unit_price) as revenue')
     .joins(:transactions)
-    .where('transactions.result = ?', 'success')
-    .where('invoices.status = ?', 'shipped')
+    .where("transactions.result = 'success'")
+    .where("invoices.status = 'shipped'")
     .group(:id)
     .order(revenue: :desc)
     .limit(quantity)
